@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<header>
+    <link rel="stylesheet" type="text/css" href="CSS/Navbar.css">                     
+    <link rel="stylesheet" type="text/css" href="CSS/Carousal.css">
+    <link rel="stylesheet" type="text/css" href="CSS/tiles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Tile layout.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Scroll.css">
+    <link rel="stylesheet" type="text/css" href="CsS/Sidebar.css">
+    <script src="Scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</header>
+
+<title>Lorem-Ipsum</title>
+
+<body id = "main" onclick="closeNav()">
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class = "nav-bar">                                                                    <!--- Navigation bar --->
+            <span class = "logo">                                                              <!--- logo --->
+                <a href = "Home.html"><img src = "logo.png" alt = "lorem Ipsum"></a>
+            </span> 
+            <div class = "search">                                                                           
+                <input class = "input" type="text" placeholder="Search the store">                       <!--- Search Bar --->
+                <span class = "hov"><button class = "search-button" type="button">Search</button></span>
+            </div>  
+
+            <button class="openbtn" onmouseover="openNav()" onclick="openNav()">☰</button>
+            <ul class="nav navbar-nav navbar-right set">   
+                <li class="dropdown">
+                    <a class="dropdown-toggle glyphicon glyphicon-user" href = "#" data-toggle="dropdown">
+                    <span id = "welcome">HelloGuest</span>
+                    <span class="caret"></span>
+                    </a>
+                    <ul class = "dropdown-menu">
+                        <div class="login-signup">
+                        <div><a href ="#"><button type="button" class = "btn-warning">Login</button></a></div>        <!--- Dropdown menu for user --->
+                        <div><a href = "#">New, sign-up instead</a></div>
+                        </div>
+                        <br><li class = "divider"></li>
+                        <li><a href = "#">Cart</a></li>
+                        <li><a href = "#">Wish List</a></li>
+                        <li><a href = "#">Orders</a></li>
+                        <li><a href = "#">Store Credits</a></li>
+                        <li class = "divider"></li>
+                        <li><a href = "#">Saved Payment method</a></li>
+                        <li><a href = "#">Saved Address</a></li>
+                        <li><a href = "#">Profile Setting</a></li>
+                        <li class = "divider"></li>
+                        <li><a href = "#">FAQs</a></li>
+                        <li><a href = "#">Contact Us</a></li>
+                        <li><a href = "#">About Us</a></li>
+                    </ul>
+                </li>   
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li> 
+            </ul> 
+            
+    </div>
+    </nav>
+
+    <div id="mySidebar" class="sidebar">                                          <!--- Sidebar --->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <div class="login-signup side">
+        <div><a href ="#"><button type="button" class = "btn-warning">Login</button></a></div>        <!--- Dropdown menu for user --->
+        <div><a href = "#">New, sign-up instead</a></div>
+        </div>
+        <br>
+        <li class = "side-text"><a href = "#">Cart</a></li>
+        <li class = "side-text"><a href = "#">Wish List</a></li>
+        <li class = "side-text"><a href = "#">Orders</a></li>
+        <li class = "side-text"><a href = "#">Store Credits</a></li>
+        <br>
+        <li class = "side-text"><a href = "#">Saved Payment method</a></li>
+        <li class = "side-text"><a href = "#">Saved Address</a></li>
+        <li class = "side-text"><a href = "#">Profile Setting</a></li>
+        <br>
+        <li class = "side-text"><a href = "#">FAQs</a></li>
+        <li class = "side-text"><a href = "#">Contact Us</a></li>
+        <li class = "side-text"><a href = "#">About Us</li>
+    </div> 
+    <div id = "page">                                                                             <!--- home page --->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">                         <!--- Carousel beginning --->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            
+            <div class="carousel-inner">
+        
+              <div class="item active">
+                <a href = "#"><img src="Carousal/Sale.png" alt="Lorem Ipsum"></a>
+                <div class="carousel-caption">
+                  
+                </div>
+              </div>
+        
+              <div class="item">
+                <a href = "#"><img src="Carousal/wedding.png" alt="Lorem Ipsum"></a>
+                <div class="carousel-caption">
+                  
+                </div>
+              </div>
+            
+              <div class="item">
+                <img src="Carousal/ethnic.png" alt="Lorem Ipsum">
+                <div class="carousel-caption">
+                  
+                </div>
+              </div>
+          
+            </div>
+        
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>                                                                       <!--- Carousal end --->
+
+        <br><br>
+
+        <div class="container-fluid text-center">                                  <!--- First row -->
+            <div class="row text-center slideanim">
+              <div class="col-sm-4">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Top picks for Men</h4>                  <!--- First tile--->
+                    <div class = "tile-image select">
+                      <a href = "#"><img src = "Men/men1.jpg"></a>
+                      <a href = "#"><img src = "Men/men2.jpg"></a>
+                    </div>
+                    <div class = "tile-image select">
+                      <a href = "#"><img src = "Men/men3.jpg"></a>
+                      <a href = "#"><img src = "Men/men4.jpg"></a>
+                    </div>
+                    <h4><a href = "#">See More</a></h4><br>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Move out trendy</h4>                        <!--- Second tile --->
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Women/women1.jpg"></a>
+                      <a href="#"><img src = "Women/women2.jpg"></a>
+                    </div>
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Women/women3.jpg"></a>
+                      <a href="#"><img src = "Women/women4.jpg"></a>
+                    </div>
+                    <h4><a href="#">See More</a></h4><br>   
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Little Rockstars</h4>                         <!--- THird tile ---> 
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Kids/kids1.jpg"></a>
+                      <a href="#"><img src = "Kids/kids2.jpg"></a>
+                    </div>
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Kids/kids3.jpg"></a>
+                      <a href="#"><img src = "Kids/kids4.jpg"></a>
+                    </div>
+                    <h4><a href="#">See More</a></h4><br>  
+                </div>
+              </div>
+          </div>    
+        
+
+        <div class="scroll">
+          <div class = "tile-heading sale">New Season Sale</div>                                <!--- Three Horizontal scroll bar --->
+          <div class = "col-sm-4 tile-box">
+            <h4 class = "tile-heading">Men</h4>  
+            <div class="scroll-items select">                                                      <!--- Scroll Items for men-->
+              <a href="#"><img src = "Season sale scroll images/Men/1.jpg"></a>
+              <a href="#"><img src = "Season sale scroll images/Men/2.jpg"></a>
+              <a href="#"><img src = "Season sale scroll images/Men/3.jpg"></a>
+              <a href="#"><img src = "Season sale scroll images/Men/4.jpg"></a>
+              <a href="#">View More...</a>
+            </div><br> 
+          </div>
+          <div class = "col-sm-4 tile-box">
+            <h4 class = "tile-heading">Women</h4>  
+              <div class="scroll-items select">                                                      <!--- Scroll Items for women-->
+                <a href="#"><img src = "Season sale scroll images/Women/1.jpg"></a>
+                <a href="#"><img src = "Season sale scroll images/Women/2.jpeg"></a>
+                <a href="#"><img src = "Season sale scroll images/Women/3"></a>
+                <a href="#"><img src = "Season sale scroll images/Women/4.jpg"></a>
+                <a href="#"><img src = "Season sale scroll images/Women/5.jpg"></a>
+                <a href="#">View More...</a>
+              </div><br> 
+          </div>
+          <div class = "col-sm-4 tile-box">
+            <h4 class = "tile-heading">Kids</h4>  
+              <div class="scroll-items select">                                                      <!--- Scroll Items kids-->
+                <a href="#"><img src = "Season sale scroll images/Kids/1.jpg"></a>
+                <a href="#"><img src = "Season sale scroll images/Kids/2.jpg"></a>
+                <a href="#"><img src = "Season sale scroll images/Kids/3.png"></a>
+                <a href="#"><img src = "Season sale scroll images/Kids/4.jfif"></a>
+                <a href="#"><img src = "Season sale scroll images/Kids/5.jpg"></a>
+                <a href="#"><img src = "Season sale scroll images/Kids/6.jpg"></a>
+                <a href="#">View More...</a>
+              </div><br> 
+          </div>
+        </div>
+        <h6>.</h6>
+        <div class = "tile-heading sale">Explore the wide range of Accessories</div>                 <!--- Accessories scroll bar --->
+          <div class = "col-sm-12 tile-box">  <br>
+            <div class="scroll-items select scroll-acc">                                      <!--- Scroll Items for accessories-->
+              <a href="#"><img src = "Accessories/MensGoggles1.jpg"></a>
+              <a href="#"><img src = "Accessories/MensGoggles2.jpg"></a>
+              <a href="#"><img src = "Accessories/WomenGlasses1.jpg"></a>
+              <a href="#"><img src = "Accessories/WomenGlasses2.jpg"></a>
+              <a href="#"><img src = "Accessories/WomenWallet1.jpeg"></a>
+              <a href="#"><img src = "Accessories/WomenWallet2.jpg"></a>
+              <a href="#"><img src = "Accessories/belt1.jpg"></a>
+              <a href="#"><img src = "Accessories/handbag1.jpg"></a>
+              <a href="#"><img src = "Accessories/handbag2.jpg"></a>
+              <a href="#"><img src = "Accessories/wallet1.jpg"></a>
+              <a href="#"><img src = "Accessories/wallet2.webp"></a>
+              <a href="#"><img src = "Accessories/belt2.jpg"></a>
+              <a href="#">View More...</a>
+            </div>
+          </div>
+          <div>.</div><br><br>
+
+          <div class="container-fluid text-center">                                  <!--- Second row -->
+            <div class="row text-center slideanim">
+              <div class="col-sm-3">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">LUCKY DRAW!!!</h4>                  <!--- Wheel tile--->
+                    <div class = "tile-image-wheel select">
+                      <a href = "#"><img src = "wheel.png"><br><br>
+                      <span class = "lucky-text">Spin the Lucky Wheel Now!<br>And win <strong>Exciting Rewards</strong></span>
+                      </a>
+                    </div><br>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Walk in Style!</h4>                        <!--- First tile --->
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Footwear/Women/1.jpg"></a>
+                      <a href="#"><img src = "Footwear/Women/2.jpg"></a>
+                    </div>
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Footwear/Women/3.jpg"></a>
+                      <a href="#"><img src = "Footwear/Women/4.jpg"></a>
+                    </div>
+                    <h4><a href="#">See More</a></h4><br>   
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Play Comfy!!</h4>                         <!--- Second tile ---> 
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Footwear/Kids/1.jpg"></a>
+                      <a href="#"><img src = "Footwear/Kids/2.png"></a>
+                    </div>
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Footwear/Kids/3.jpeg"></a>
+                      <a href="#"><img src = "Footwear/Kids/4.jpg"></a>
+                    </div>
+                    <h4><a href="#">See More</a></h4><br>  
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Walk in Confidence!</h4>                         <!--- THird tile ---> 
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Footwear/Mens/1.jpg"></a>
+                      <a href="#"><img src = "Footwear/Mens/2.jpg"></a>
+                      <a href="#"><img src = "Footwear/Mens/3.jpg"></a>
+                      <a href="#"><img src = "Footwear/Mens/4.jpeg"></a>
+                    </div>
+                    <h4><a href="#">See More</a></h4><br>  
+                </div>
+              </div>
+          </div>
+          </div>    
+
+          <div class = "tile-heading sale">Only Girls ! !</div>                 <!--- Cosmetics scroll bar --->
+          <div class = "col-sm-12 tile-box">  <br>
+            <div class="scroll-items select scroll-acc">                                      <!--- Scroll Items for cosmetics-->
+              <a href="#"><img src = "Cosmetics/Blush.jpg"></a>
+              <a href="#"><img src = "Cosmetics/Blush2.jpg"></a>
+              <a href="#"><img src = "Cosmetics/BrushSet.jpg"></a>
+              <a href="#"><img src = "Cosmetics/Eyeshadow.jfif"></a>
+              <a href="#"><img src = "Cosmetics/Eyeshadow2.jfif"></a>
+              <a href="#"><img src = "Cosmetics/Glitter.jpg"></a>
+              <a href="#"><img src = "Cosmetics/LiquidEyeliner.jpg"></a>
+              <a href="#"><img src = "Cosmetics/liquidMatteLipstick.jpg"></a>
+              <a href="#"><img src = "Cosmetics/MatteLipstick.jpg"></a>
+              <a href="#"><img src = "Cosmetics/RedLipstick.jfif"></a>
+              <a href="#"><img src = "Cosmetics/redNailPaint.jpg"></a>
+              <a href="#"><img src = "Cosmetics/SetOf12.jpg"></a>
+              <a href="#"><img src = "Cosmetics/SetOf4.jpg"></a>
+              <a href="#"><img src = "Cosmetics/UltraFineBrush.jpg"></a>
+              <a href="#"><img src = "Cosmetics/Brush2.png"></a>
+              <a href="#">View More...</a>
+            </div>
+          </div>
+          <div>.</div><br>
+          
+          <div class = "tile-heading sale">DISCOVER MORE</div>
+          <div class="container-fluid text-center">                                  <!--- Third row -->
+            <div class="row text-center slideanim">
+              <div class="col-sm-3">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Workout Trendy</h4>                        <!--- First tile --->
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Workout/men.jpg"></a>
+                      <img src = "Blank.png">
+                    </div>
+                    <div class = "tile-image select">
+                      <img src = "Blank.png">
+                      <a href="#"><img src = "Workout/women.jpg"></a>
+                    </div><br>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Look Trendy</h4>                        <!--- Second tile --->
+                    <div class = "tile-image select">
+                      <img src = "Blank.png">
+                      <a href="#"><img src = "Accessories/MenGoggles3.jpg"></a>
+                    </div>
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Accessories/WomenGlasses3.jpg"></a>
+                      <img src = "Blank.png">
+                    </div><br>   
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Carry Trendy</h4>                         <!--- Third tile ---> 
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Accessories/combo2.jpg"></a>
+                      <img src = "Blank.png">
+                    </div>
+                    <div class = "tile-image select">
+                      <img src = "Blank.png">
+                      <a href="#"><img src = "Accessories/combo1.jpg"></a>
+                    </div><br>  
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Style Trendy</h4>                         <!--- Fourth tile ---> 
+                    <div class = "tile-image select">
+                      <img src = "Blank.png">
+                      <a href="#"><img src = "Men/men5.jpg"></a>
+                    </div>
+                    <div class = "tile-image select">  
+                      <a href="#"><img src = "Women/Women5.jfif"></a>
+                      <img src = "Blank.png">
+                    </div><br>  
+                </div>
+              </div>
+          </div>
+          </div>  
+          
+          <div class="container-fluid text-center">                                  <!--- Fourth row -->
+            <div class="row text-center slideanim">
+              <div class="col-sm-3">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Ethnic</h4>                        <!--- First tile --->
+                    <div class = "tile-image select">
+                      <img src = "Blank.png">
+                      <a href="#"><img src = "Men/men6.jpg"></a>
+                    </div>
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Women/Women6.jpg"></a>
+                      <img src = "Blank.png">
+                    </div><br>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Formal</h4>                        <!--- Second tile --->
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Men/men7.jpg"></a>
+                      <img src = "Blank.png">
+                    </div>
+                    <div class = "tile-image select">
+                      <img src = "Blank.png">
+                      <a href="#"><img src = "Women/women7.jpg"></a>
+                    </div><br>   
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Kids</h4>                         <!--- Third tile ---> 
+                    <div class = "tile-image select">
+                      <img src = "Blank.png">
+                      <a href="#"><img src = "Kids/kids5.jpg"></a>
+                    </div>
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Kids/kids6.jpg"></a>
+                      <img src = "Blank.png">
+                    </div><br>  
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class = "tile tile-box">
+                    <h4 class = "tile-heading">Youth</h4>                         <!--- Fourth tile ---> 
+                    <div class = "tile-image select">
+                      <a href="#"><img src = "Men/men8.jpg"></a>
+                      <img src = "Blank.png">
+                    </div>
+                    <div class = "tile-image select">  
+                      <img src = "Blank.png">
+                      <a href="#"><img src = "Women/women8.jpg"></a>
+                    </div><br>  
+                </div>
+              </div>
+          </div>
+          </div>    
+
+        
+    </div>  
+    </div>                                                                                   <!--- Home page end ---> 
+
+    <footer>                                                                                  <!--- footer --->
+      <div id="contact" class="container">                                                    <!--- Contact and feedback --->
+        <h3 class="text-center">Contact</h3>
+        <p class="text-center"><em>We love our customers!</em></p>
+      
+        <div class="row">
+          <div class="col-md-4">
+            <p>Have any query? Drop a note.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Headquarters : Gurugram, India</p>
+            <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 0000000000</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@lauremIpsum.com</p>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <form>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" required></textarea>
+            <br>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <button class="btn pull-right" type="submit">Send</button>
+              </div>
+            </div>
+          </form>
+          </div>
+        </div><br><br>
+        <h4>Designed and Developed by <strong>Akshat Abhishek Lal</strong></h4>
+        <h5>Credits to repective owners of images <br>
+        <strong>PS : Developed solely for educational purpose and not to be commercialy used</strong></h5><br>
+    </footer>
+</body>

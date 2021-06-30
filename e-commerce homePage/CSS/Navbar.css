@@ -1,0 +1,89 @@
+.nav-bar{                                              /*navigatin bar*/
+    background-color:rgb(2, 1, 31);
+    width: 100%;
+    position: fixed ;
+    top: 0px; right: 0px; left: 0px; 
+    z-index: 100;
+}
+
+.logo{                                                   /*logo*/
+    padding-left: 2%;
+}
+.logo img{
+    height: 4.5%;
+    width: 4.5%;
+}
+
+.search{                                                /*serach bar*/
+    display:inline;
+    padding-left: 5%;
+    font-size: 110%;
+    font-family: Georgia;
+    padding-top: 4%;
+}
+.input{
+    width: 45%;
+    border-style: groove;
+    border-width: 3px;
+    background-color: cornsilk ;
+}
+.search-button{
+    border-style:groove;
+    border-radius: 5px;
+    font-weight: 800;
+    font-style: oblique;
+    background-color:cornsilk;
+}
+
+.hov :hover{                                              /*hover in dropdown*/
+    color: cornsilk;
+    background-color: #281804;
+}
+
+.nav{
+    padding-right: 3%;
+    padding-top: 0.3%;
+    font-family: cursive;
+}
+
+.glyphicon{
+    color:white;
+    font-size: 160%;
+}
+
+#welcome{
+    color: white;
+}
+.caret{
+    color: white;
+}
+
+.login-signup{
+    text-align: center;
+}
+
+.btn-warning{
+    font-size: 150%;
+    border-radius: 10px;
+}
+
+#value{
+    color: black;
+    font-size: 110%;
+}
+
+@media screen and (max-width:820px){
+    .nav-bar{
+        font-size: 80%;
+    }
+}    
+
+@media screen and (max-width:770px){
+    .set{
+        display: none;
+    }
+    
+}
+
+
+

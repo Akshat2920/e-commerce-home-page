@@ -1,0 +1,47 @@
+.scroll-items {
+    overflow: auto;
+    white-space: nowrap;
+}
+  
+.scroll-items img{
+    height: 45%;
+    width: 45%;
+    border-style: hidden;
+    border-radius: 12px;
+}
+
+.sale{
+    font-family: cursive;
+    font-style: italic;
+    font-size: 200%;
+    width: 100%;
+}
+
+.tile-box{
+    background-color: white;
+}
+
+.scroll-acc img{
+    height: 15%;
+    width: 15%;
+}
+
+@media screen and (max-width: 800px){  
+    .scroll-items::-webkit-scrollbar {                 /*Hide scrollbar for chrome, safari and opera*/
+          display: none;
+    }
+      
+    .scroll-items {
+        -ms-overflow-style: none;                       /* Hide scrollbar for IE and Edge */
+        scrollbar-width: none;                          /* Hide scrollbar for Firefox */
+    } 
+    
+    .scroll-acc img{
+        height: 40%;
+        width: 40%;
+    }
+
+    .sale{
+        font-size: 150%;
+    }
+}

@@ -1,0 +1,46 @@
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 36px;
+    margin-left: 4%;
+}
+  
+.openbtn{
+    display: block;
+    font-size: 20px;
+    cursor:pointer;
+    background-color: rgb(2, 1, 31);
+    color: white;
+    padding-left: 1%; padding-top: 1.5%;
+    border: none;
+    float: left;
+}
+
+.closebtn{
+    margin-top: 60px;
+}
+
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+    opacity: 80%;
+}
+
+.side-text a{
+    font-size: 140%;
+    font-family: monospace;
+    color: wheat;
+}
+
+.side-text :hover{
+    color: white;
+}

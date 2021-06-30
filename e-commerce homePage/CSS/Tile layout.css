@@ -1,0 +1,44 @@
+.tile-heading{
+    font-weight: bold;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+.tile-image img{
+    height: 45%;
+    width: 45%;
+    padding-bottom: 1%;
+    border-style: hidden;
+    border-radius: 12px;
+}
+
+.tile-image-wheel img{
+    height: 81%;
+    width: 81%;
+    padding-bottom: 1%;
+    border-style: hidden;
+    border-radius: 25px;
+}
+
+.tile-image-wheel :hover{
+    filter: brightness(105%);
+}
+
+.lucky-text{
+    font-size: 130%;
+    color: rgb(192, 33, 33);
+    font-family:monospace;
+}
+
+@media screen and (max-width: 800px){
+    .tile-image img{
+        height: 40%;
+        width: 40%;
+    }
+
+    .tile-image-wheel{
+        height: 70%;
+        width: 70%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,18 @@
+#page{                                                     /*styling home page*/
+    margin-top: 60px;
+    padding-right: 1%; padding-left: 1%;
+    padding-bottom: 3%;
+}
+
+.item img{                                                  /*Styling image of the carousal*/
+    width: 80%;
+    margin: auto;
+}
+
+.select :hover{
+    filter: invert(6%);
+}    
+
+#page{
+    background-color: rgb(238, 234, 234);
+}
